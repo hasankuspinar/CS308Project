@@ -1,0 +1,6 @@
+@CS308Backend_HostAddress = http://localhost:5221
+
+GET {{CS308Backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

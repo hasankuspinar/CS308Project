@@ -1,0 +1,3 @@
+-- Add any initialization SQL here
+-- This file is used to initialize the database
+-- when the container is first created.

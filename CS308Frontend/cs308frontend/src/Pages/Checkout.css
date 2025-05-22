@@ -1,0 +1,25 @@
+.checkout-container {
+    min-height: 100vh;
+    background-color: #f3e5f5;
+    padding: 60px 30px;
+}
+
+.checkout-card {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-button {
+    transition: 0.3s;
+    background-color: #9f5db3;
+    border: none;
+}
+
+    .checkout-button:hover {
+        background-color: #a9e88e;
+    }
+

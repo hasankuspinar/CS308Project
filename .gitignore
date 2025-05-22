@@ -1,0 +1,51 @@
+# ------------------------
+# FRONTEND (React in CS308Frontend)
+# ------------------------
+/CS308Frontend/node_modules/
+CS308Frontend/.env
+/CS308Frontend/.parcel-cache
+/CS308Frontend/.pnp*
+/CS308Frontend/.DS_Store
+/CS308Frontend/coverage/
+/CS308Frontend/build/
+
+# ------------------------
+# BACKEND (.NET Core)
+# ------------------------
+/CS308Backend/bin/
+/CS308Backend/obj/
+/CS308Backend/*.user
+/CS308Backend/*.suo
+/CS308Backend/.vs
+/TestProject1/bin/
+/TestProject1/obj/
+/TestProject1/*.user
+/TestProject1/*.suo
+**/appsettings.Development.json
+**/appsettings.Local.json
+
+# ------------------------
+# DOCKER VOLUMES & ENV
+# ------------------------
+.env
+.env.*
+
+# ------------------------
+# SYSTEM & IDE
+# ------------------------
+.vscode/
+.idea/
+*.swp
+*.tmp
+*.log
+*.bak
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ------------------------
+# TEST COVERAGE & CACHE
+# ------------------------
+/coverage/
+/**/TestResults/
+/**/.questpdf-cache/

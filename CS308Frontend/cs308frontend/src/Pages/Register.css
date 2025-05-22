@@ -1,0 +1,33 @@
+.register-container {
+    min-height: 100vh;
+    background-color: #f3e5f5;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-card {
+    width: 600px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.register-button {
+    transition: 0.3s;
+    background-color: #9f5db3;
+}
+
+    .register-button:hover {
+        background-color: #a9e88e;
+    }
+
+.login-link {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+    .login-link:hover {
+        text-decoration: underline;
+    }

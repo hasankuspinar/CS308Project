@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_db
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db_name
+      MYSQL_USER: db_user
+      MYSQL_PASSWORD: db_password
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "3307:3306"
+
+  backend:
+    build:
+      context: ./CS308Backend
+    container_name: dotnet_backend
+    depends_on:
+      - mysql
+    environment:
+      ConnectionStrings__Default: "Server=mysql;Port=3306;Database=db_name;Uid=db_user;Pwd=db_password;Charset=utf8mb4;"
+    ports:
+      - "5221:8080"
+
+  frontend:
+    build:
+      context: ./CS308Frontend/cs308frontend
+    container_name: react_frontend
+    depends_on:
+      - backend
+    ports:
+      - "5173:80"
+
+volumes:
+  db_data:

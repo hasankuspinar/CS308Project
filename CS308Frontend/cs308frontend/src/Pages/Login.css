@@ -1,0 +1,33 @@
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3e5f5;
+}
+
+.login-card {
+    width: 600px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.login-button {
+    transition: 0.3s;
+    background-color: #9F5DB3;
+}
+
+.login-button:hover {
+    background-color: #A9E88E;
+}
+
+.login-link {
+    text-decoration: none;
+    transition: 0.3s;
+    color: #007bff;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
